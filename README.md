@@ -1,6 +1,6 @@
 # Project 3 - VirtualBox and Kali
 
-Time spent: **X** hours spent in total
+Time spent: **2.5** hours spent in total
 
 **Homework Instructions**: 
 
@@ -15,8 +15,6 @@ screenfetch
 echo $name'@'$univ
 ```
 
-Save the file as **screenfetch.gif**.
-
 **Challenges and Problems**: 
 
 ### Installing VirtualBox and Kali
@@ -24,5 +22,5 @@ Save the file as **screenfetch.gif**.
 <img src="http://g.recordit.co/SV36lSl9w3.gif" alt="Virtualbox Installation">
  
 ### Running screenfetch
-
+<img src="https://recordit.co/8fsmdVcaK3" alt="Running screenfetch">
 <img src="http://g.recordit.co/iNN9ecMTXa.gif" alt="Running screenfetch">
