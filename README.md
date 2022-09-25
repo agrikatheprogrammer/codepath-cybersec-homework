@@ -22,5 +22,5 @@ echo $name'@'$univ
 <img src="http://g.recordit.co/SV36lSl9w3.gif" alt="Virtualbox Installation">
  
 ### Running screenfetch
-<img src="https://recordit.co/8fsmdVcaK3" alt="Running screenfetch">
+<img src="http://g.recordit.co/8fsmdVcaK3.gif" alt="Running screenfetch">
 <img src="http://g.recordit.co/iNN9ecMTXa.gif" alt="Running screenfetch">
