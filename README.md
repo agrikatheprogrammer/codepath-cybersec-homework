@@ -12,7 +12,7 @@ Time spent: **7** hours spent in total
   - Vulnerability types: XSS will be execute , because the filename is stored on page without any filter, and this is possible to make stored XSS. It'll be good to filter / encoding the illegal character, like wordpress do on themes upload.
   - Tested in version: 4.2
   - Fixed in version: 5.4.2
-- GIF Walkthrough: <img src="http://g.recordit.co/6d6ubblcn1.gif" width=200><br>
+- GIF Walkthrough: <img src="http://g.recordit.co/76wzxcVwmW.gif" width=200><br>
 - Steps to recreate: 
 1. Upload theme
 2. Delete the style.css ( or you can make new folder on theme path with payload name )
