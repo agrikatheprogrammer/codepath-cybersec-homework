@@ -16,7 +16,7 @@ Time spent: **7** hours spent in total
 - Steps to recreate: 
 1. Upload theme
 2. Delete the style.css ( or you can make new folder on theme path with payload name )
-3. Rename the folder to <img src=x onerror=alert(1)>
+3. Rename the folder to script "img src=x onerror=alert(1)"
 4. Refresh and see theme page
 - Affected source code:
 [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
