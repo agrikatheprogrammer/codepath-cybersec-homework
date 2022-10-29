@@ -54,7 +54,7 @@ Because XSS attacks target users rather than servers or network infrastructure, 
   - Fixed in version: 4.2.23
 -  GIF Walkthrough: <img src="http://g.recordit.co/u7nAfj9LUf.gif" width=200><br>
 - [ ] Steps to recreate: Add XSS scripts to comments!
-I used: "<svg onload=alert(1)>"AND"<body onload=window.location='https://codepath.org/'>"
+I used: "svg onload=alert(1)"AND"body onload=window.location='https://codepath.org/'"
 - [ ] Affected source code:
   - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 
