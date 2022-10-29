@@ -67,7 +67,7 @@ In most cases, XSS allows an attacker to access victims’ cookies and use them 
   - Fixed in version: 4.2.23
 - GIF Walkthrough: <img src="http://g.recordit.co/LsqLd9mG0u.gif" width=200><br>
 - [ ] Steps to recreate: Add code/XSS script in caption /post!
-<span style="font-weight: 400;">click here &lt;script&gt;alert(document.cookie)&lt;/script&gt;</span>
+span style="font-weight: 400;",click here &lt;script&gt;alert(document.cookie)&lt;/script&gt;</span
 - [ ] Affected source code:
   - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 
