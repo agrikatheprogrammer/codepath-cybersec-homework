@@ -19,6 +19,7 @@ Time spent: **7** hours spent in total
 3. Rename the folder to <img src=x onerror=alert(1)>
 4. Refresh and see theme page
 - Affected source code:
+[Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
  https://wpscan.com/vulnerability/d8addb42-e70b-4439-b828-fd0697e5d9d4
  https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-4049
  https://www.exploit-db.com/exploits/48770/
