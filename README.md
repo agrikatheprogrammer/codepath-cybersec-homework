@@ -32,7 +32,7 @@ Time spent: **7** hours spent in total
 
 - [x] Summary: WordPress Plugin ReFlex Gallery is prone to a vulnerability that lets attackers upload arbitrary files because the application fails to properly sanitize user-supplied input. An attacker can exploit this vulnerability to upload arbitrary code and run it in the context of the webserver process. This may facilitate unauthorized access or privilege escalation; other attacks are also possible. 
 This particular vulnerability could allow a user with the ‘upload_files’ capability (Authors and above in a default installation) to upload a file with the filename set to malicious JavaScript, which might be executed when viewing the file in the media gallery
-  - Vulnerability types: XSS/CSRF
+  - Vulnerability types: XSS/CSRF/Privilege Escalation
   - Tested in version: 4.2
   - Fixed in version: 3.4
 -  GIF Walkthrough: <img src="http://g.recordit.co/JDBmWQHoJ6.gif" width=200><br>
