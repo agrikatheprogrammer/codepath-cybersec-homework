@@ -57,6 +57,7 @@ Because XSS attacks target users rather than servers or network infrastructure, 
 I used: "svg onload=alert(1)"AND"body onload=window.location='https://codepath.org/'"
 - [ ] Affected source code:
   - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+  - http://wpdistillery.vm
 
 ### 4. CSRF through post itself
 
@@ -70,10 +71,11 @@ In most cases, XSS allows an attacker to access victims’ cookies and use them 
 span style="font-weight: 400;",click here &lt;script&gt;alert(document.cookie)&lt;/script&gt;</span
 - [ ] Affected source code:
   - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+  - http://wpdistillery.vm
 
 ### 5. User Enumeration (CVE-2020-7918)
 
-- [x] Summary: ounts, and in scenarios where a person tried to login with default credentials or any username or password the error is specific and provides details on whether username or password right or wrong
+- [x] Summary: Part of testing created various accounts, and in scenarios where a person tried to login with default credentials or any username or password the error is specific and provides details on whether username or password right or wrong
   - Vulnerability types:
   - Tested in version: 4.2
   - Fixed in version: 4.5
@@ -87,6 +89,7 @@ span style="font-weight: 400;",click here &lt;script&gt;alert(document.cookie)&l
 Using wpscan and a file of many passwords, the username and password was cracked
 - [ ] Affected source code:
   - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php) 
+  - http://wpdistillery.vm/wp-login.php
 
 ## Assets
 
