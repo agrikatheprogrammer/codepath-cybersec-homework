@@ -12,7 +12,7 @@ Time spent: **7** hours spent in total
   - Vulnerability types: XSS will be execute , because the filename is stored on page without any filter, and this is possible to make stored XSS. It'll be good to filter / encoding the illegal character, like wordpress do on themes upload.
   - Tested in version: 4.2
   - Fixed in version: 5.4.2
-- GIF Walkthrough: 
+- GIF Walkthrough: <img src="http://g.recordit.co/6d6ubblcn1.gif" width=200><br>
 - Steps to recreate: 
 1. Upload theme
 2. Delete the style.css ( or you can make new folder on theme path with payload name )
@@ -57,7 +57,7 @@ Because XSS attacks target users rather than servers or network infrastructure, 
 - [ ] Affected source code:
   - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 
-### 4. CSRF
+### 4. CSRF through post itself
 
 - [ ] Summary: WordPress does not escape captions.
 In most cases, XSS allows an attacker to access victims’ cookies and use them to take over the victim’s session on the server. This can lead to complete account takeover and information theft — including email address, IP address and even credit card data.
@@ -70,20 +70,23 @@ In most cases, XSS allows an attacker to access victims’ cookies and use them 
 - [ ] Affected source code:
   - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 
-### 5. (Optional) Vulnerability Name or ID
+### 5. User Enumeration (CVE-2020-7918)
 
-- [ ] Summary: 
+- [x] Summary: ounts, and in scenarios where a person tried to login with default credentials or any username or password the error is specific and provides details on whether username or password right or wrong
   - Vulnerability types:
-  - Tested in version:
+  - Tested in version: 4.2
   - Fixed in version: 
-- [ ] GIF Walkthrough: 
-- [ ] Steps to recreate: 
+- [ ] GIF Walkthrough: <img src="http://g.recordit.co/MDOz41dFKm.gif" width=200><br>
+<img src=http://g.recordit.co/DsdYuLhmJ4.gif" width=200><br>
+-  Steps to recreate: Here, I made a account in our wordpress, when a person tried to login and tried several username and at last he found that user1 username exist
+Using wpscan and a file of many passwords, the username and password was cracked
 - [ ] Affected source code:
   - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php) 
 
 ## Assets
 
 List any additional assets, such as scripts or files
+
 
 ## Resources
 
@@ -96,9 +99,6 @@ GIFs created with  ...
 [ScreenToGif](https://www.screentogif.com/) for Windows
 [peek](https://github.com/phw/peek) for Linux. -->
 
-## Notes
-
-Describe any challenges encountered while doing the work
 
 ## License
 
