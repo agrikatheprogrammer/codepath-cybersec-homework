@@ -76,7 +76,7 @@ In most cases, XSS allows an attacker to access victims’ cookies and use them 
 - [x] Summary: ounts, and in scenarios where a person tried to login with default credentials or any username or password the error is specific and provides details on whether username or password right or wrong
   - Vulnerability types:
   - Tested in version: 4.2
-  - Fixed in version: 
+  - Fixed in version: 4.5
 - [ ] GIF Walkthrough: <img src="http://g.recordit.co/MDOz41dFKm.gif" width=200><br>
 <img src="http://g.recordit.co/DsdYuLhmJ4.gif" width=200><br>
 -  Steps to recreate: Here, I made a account in our wordpress, when a person tried to login and tried several username and at last he found that user1 username exist
