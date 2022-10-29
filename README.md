@@ -47,9 +47,9 @@ Because XSS attacks target users rather than servers or network infrastructure, 
   - Vulnerability types: XSS/CSRF
   - Tested in version: 4.2
   - Fixed in version: 5.8.6
-- [ ] GIF Walkthrough: 
+- [x] GIF Walkthrough: <img src="http://recordit.co/6d6ubblcn1" width=200><br>
 - [ ] Steps to recreate: 
-- [ ] Affected source code:
+- [x] Affected source code:
   - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 
 ### 4. (Optional) Vulnerability Name or ID
