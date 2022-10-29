@@ -34,7 +34,7 @@ Time spent: **7** hours spent in total
 This particular vulnerability could allow a user with the ‘upload_files’ capability (Authors and above in a default installation) to upload a file with the filename set to malicious JavaScript, which might be executed when viewing the file in the media gallery
   - Vulnerability types: XSS/CSRF
   - Tested in version: 4.2
-  - Fixed in version: 4.2.23
+  - Fixed in version: 3.4
 -  GIF Walkthrough: <img src="http://g.recordit.co/JDBmWQHoJ6.gif" width=200><br>
 - [x] Steps to recreate: Use HTML code to create POST for file upload
 method="POST" action="http://127.0.0.1:1337/wordpress/wp-content/plugins/reflex-gallery/admin/scripts/FileUploader/php.php?Year=2015&Month=03" enctype="multipart/form-data" >
