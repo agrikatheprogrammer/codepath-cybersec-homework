@@ -27,14 +27,14 @@ Time spent: **7** hours spent in total
  https://hackerone.com/reports/406289
 
   
-### 2. (Required) Vulnerability Name or ID
+### 2. Unauthenticated file uploads leading to XSS/SQLi etc.
 
 - [x] Summary: WordPress Plugin ReFlex Gallery is prone to a vulnerability that lets attackers upload arbitrary files because the application fails to properly sanitize user-supplied input. An attacker can exploit this vulnerability to upload arbitrary code and run it in the context of the webserver process. This may facilitate unauthorized access or privilege escalation; other attacks are also possible. 
 This particular vulnerability could allow a user with the ‘upload_files’ capability (Authors and above in a default installation) to upload a file with the filename set to malicious JavaScript, which might be executed when viewing the file in the media gallery
   - Vulnerability types: XSS/CSRF
   - Tested in version: 4.2
   - Fixed in version: 4.5
-- [ ] GIF Walkthrough: <img src="http://g.recordit.co/zIqWdRoG0d.gif" width=200><br>
+- [x] GIF Walkthrough: <img src="http://g.recordit.co/JDBmWQHoJ6.gif" width=200><br>
 - [x] Steps to recreate: Use HTML code to create POST for file upload
 <form method="POST" action="http://127.0.0.1:1337/wordpress/wp-content/plugins/reflex-gallery/admin/scripts/FileUploader/php.php?Year=2015&Month=03" enctype="multipart/form-data" >
     <input type="file" name="qqfile"><br>
@@ -43,7 +43,7 @@ This particular vulnerability could allow a user with the ‘upload_files’ cap
 - [ ] Affected source code:
   - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 
-### 3. (Required) Stored XSS via Comment Editing
+### 3. Stored XSS via Comment Editing
 
 - [x] Summary: WordPress does not properly escape comments, which could lead to Stored Cross-Site Scripting issues.
 In most cases, XSS allows an attacker to access victims’ cookies and use them to take over the victim’s session on the server. This can lead to complete account takeover and information theft — including email address, IP address and even credit card data.
@@ -51,20 +51,22 @@ In most cases, XSS allows an attacker to access victims’ cookies and use them 
 Because XSS attacks target users rather than servers or network infrastructure, they’re often overlooked by developers in favor of more complex exploits that require more technical expertise to pull off.
   - Vulnerability types: XSS/CSRF
   - Tested in version: 4.2
-  - Fixed in version: 5.8.6
+  - Fixed in version: 4.2.23
 - [x] GIF Walkthrough: <img src="http://g.recordit.co/6d6ubblcn1.gif" width=200><br>
 - [ ] Steps to recreate: 
-- [x] Affected source code:
+- [ ] Affected source code:
   - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 
-### 4. (Optional) Vulnerability Name or ID
+### 4. CSRF
 
-- [ ] Summary: 
-  - Vulnerability types:
-  - Tested in version:
-  - Fixed in version: 
-- [ ] GIF Walkthrough: 
-- [ ] Steps to recreate: 
+- [ ] Summary: WordPress does not escape captions.
+In most cases, XSS allows an attacker to access victims’ cookies and use them to take over the victim’s session on the server. This can lead to complete account takeover and information theft — including email address, IP address and even credit card data.
+  - Vulnerability types: CSRF
+  - Tested in version: 4.2
+  - Fixed in version: 4.2.23
+- [ ] GIF Walkthrough: <img src="http://g.recordit.co/LsqLd9mG0u.gif" width=200><br>
+- [ ] Steps to recreate: Add code in caption to redirect users
+<span style="font-weight: 400;">click here &lt;script&gt;alert(document.cookie)&lt;/script&gt;</span>
 - [ ] Affected source code:
   - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 
