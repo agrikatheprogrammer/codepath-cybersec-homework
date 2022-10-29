@@ -77,7 +77,7 @@ In most cases, XSS allows an attacker to access victims’ cookies and use them 
   - Tested in version: 4.2
   - Fixed in version: 
 - [ ] GIF Walkthrough: <img src="http://g.recordit.co/MDOz41dFKm.gif" width=200><br>
-<img src=http://g.recordit.co/DsdYuLhmJ4.gif" width=200><br>
+<img src="http://g.recordit.co/DsdYuLhmJ4.gif" width=200><br>
 -  Steps to recreate: Here, I made a account in our wordpress, when a person tried to login and tried several username and at last he found that user1 username exist
 Using wpscan and a file of many passwords, the username and password was cracked
 - [ ] Affected source code:
