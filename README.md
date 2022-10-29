@@ -52,8 +52,9 @@ Because XSS attacks target users rather than servers or network infrastructure, 
   - Vulnerability types: XSS/CSRF
   - Tested in version: 4.2
   - Fixed in version: 4.2.23
--  GIF Walkthrough: <img src="http://g.recordit.co/6d6ubblcn1.gif" width=200><br>
-- [ ] Steps to recreate: 
+-  GIF Walkthrough: <img src="http://g.recordit.co/u7nAfj9LUf.gif" width=200><br>
+- [ ] Steps to recreate: Add XSS scripts to comments!
+I used: "<svg onload=alert(1)>"AND"<body onload=window.location='https://codepath.org/'>"
 - [ ] Affected source code:
   - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 
@@ -65,7 +66,7 @@ In most cases, XSS allows an attacker to access victims’ cookies and use them 
   - Tested in version: 4.2
   - Fixed in version: 4.2.23
 - GIF Walkthrough: <img src="http://g.recordit.co/LsqLd9mG0u.gif" width=200><br>
-- [ ] Steps to recreate: Add code in caption to redirect users
+- [ ] Steps to recreate: Add code/XSS script in caption /post!
 <span style="font-weight: 400;">click here &lt;script&gt;alert(document.cookie)&lt;/script&gt;</span>
 - [ ] Affected source code:
   - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
