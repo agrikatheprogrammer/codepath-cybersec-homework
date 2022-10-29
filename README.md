@@ -34,7 +34,7 @@ This particular vulnerability could allow a user with the ‘upload_files’ cap
   - Vulnerability types: XSS/CSRF
   - Tested in version: 4.2
   - Fixed in version: 4.5
-- [x] GIF Walkthrough: <img src="http://g.recordit.co/JDBmWQHoJ6.gif" width=200><br>
+-  GIF Walkthrough: <img src="http://g.recordit.co/JDBmWQHoJ6.gif" width=200><br>
 - [x] Steps to recreate: Use HTML code to create POST for file upload
 <form method="POST" action="http://127.0.0.1:1337/wordpress/wp-content/plugins/reflex-gallery/admin/scripts/FileUploader/php.php?Year=2015&Month=03" enctype="multipart/form-data" >
     <input type="file" name="qqfile"><br>
@@ -52,7 +52,7 @@ Because XSS attacks target users rather than servers or network infrastructure, 
   - Vulnerability types: XSS/CSRF
   - Tested in version: 4.2
   - Fixed in version: 4.2.23
-- [x] GIF Walkthrough: <img src="http://g.recordit.co/6d6ubblcn1.gif" width=200><br>
+-  GIF Walkthrough: <img src="http://g.recordit.co/6d6ubblcn1.gif" width=200><br>
 - [ ] Steps to recreate: 
 - [ ] Affected source code:
   - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
@@ -64,7 +64,7 @@ In most cases, XSS allows an attacker to access victims’ cookies and use them 
   - Vulnerability types: CSRF
   - Tested in version: 4.2
   - Fixed in version: 4.2.23
-- [ ] GIF Walkthrough: <img src="http://g.recordit.co/LsqLd9mG0u.gif" width=200><br>
+- GIF Walkthrough: <img src="http://g.recordit.co/LsqLd9mG0u.gif" width=200><br>
 - [ ] Steps to recreate: Add code in caption to redirect users
 <span style="font-weight: 400;">click here &lt;script&gt;alert(document.cookie)&lt;/script&gt;</span>
 - [ ] Affected source code:
