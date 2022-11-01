@@ -40,7 +40,7 @@ In this case, XSS can be embedded in the feedback/contact form and triggered whe
 
 <img src="http://g.recordit.co/JDWtU0qIJR.gif">
 
-Vulnerability #2: Cross-Site Request Forgery (CSRF)
+Vulnerability #2: Username Enumeration
 
 Description:
 
