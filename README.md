@@ -27,7 +27,7 @@ Vulnerability #2: SQL Injection (SQLi)
 
 Description:
 
-<img src="blue-vuln1.gif">
+<img src="http://g.recordit.co/Q5u62Bv9QT.gif">
 
 
 ## Green
