@@ -19,7 +19,9 @@ Each color is vulnerable to only 2 of the 6 possible exploits. First discover wh
 
 Vulnerability #1: Session Hijacking/Fixation
 
-Description:
+Description: Session Fixation is an attack that permits an attacker to hijack a valid user session. 
+
+In this case, the session id was changed to **codepath** and Internet Explorer browser was opened afterward. The session for the Internet Explorer's Blue Target was changed to **codepath** too. Despite being not logged in, I was able to hijack the other user's session because I got logged in after copying a valid, existing session id of the Chrome browser.
 
 <img src="http://g.recordit.co/QT9IzYk3sH.gif">
 
