@@ -23,7 +23,7 @@ Description:
 
 <img src="http://g.recordit.co/QT9IzYk3sH.gif">
 
-Vulnerability #2: __________________
+Vulnerability #2: SQL Injection (SQLi)
 
 Description:
 
@@ -40,7 +40,7 @@ In this case, XSS can be embedded in the feedback/contact form and triggered whe
 
 <img src="http://g.recordit.co/JDWtU0qIJR.gif">
 
-Vulnerability #2: __________________
+Vulnerability #2: Cross-Site Request Forgery (CSRF)
 
 Description:
 
@@ -57,7 +57,7 @@ In this case, employees that were removed or are to be listed in the future can 
 
 <img src="http://g.recordit.co/JcCzrfQiOt.gif">
 
-Vulnerability #2: _________________
+Vulnerability #2: Cross-Site Request Forgery (CSRF)
 
 Description:
 
