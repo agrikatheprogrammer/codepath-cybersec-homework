@@ -65,7 +65,7 @@ In this case, employees that were removed or are to be listed in the future can 
 
 Vulnerability #2: Cross-Site Request Forgery (CSRF)
 
-Description:
+Description: A clever attacker could design a form which would automatically submit form data to the staff area and take advantage of a logged in user's access permissions.
 
 <img src="blue-vuln1.gif">
 
