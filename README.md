@@ -25,7 +25,7 @@ Description:
 
 Vulnerability #2: SQL Injection (SQLi)
 
-Description:
+Description: The database can be put to sleep for 5 seconds using a SQL Injection. To do so, all we need to inject is **' OR SLEEP(5)=0--'**
 
 <img src="http://g.recordit.co/Q5u62Bv9QT.gif">
 
