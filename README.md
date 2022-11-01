@@ -21,7 +21,7 @@ Vulnerability #1: __________________
 
 Description:
 
-<img src="blue-vuln1.gif">
+<img src="http://g.recordit.co/QT9IzYk3sH.gif">
 
 Vulnerability #2: __________________
 
