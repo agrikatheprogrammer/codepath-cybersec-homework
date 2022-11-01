@@ -44,7 +44,7 @@ Vulnerability #2: Username Enumeration
 
 Description:
 
-<img src="blue-vuln1.gif">
+<img src="http://g.recordit.co/NYvawyKM8Y.gif">
 
 
 ## Red
