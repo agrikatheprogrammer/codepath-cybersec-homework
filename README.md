@@ -51,7 +51,7 @@ Vulnerability #1: Insecure Direct Object Reference (IDOR)
 
 Description: Insecure Direct Object References (IDOR) occur when an application provides direct access to objects based on user-supplied input. As a result of this vulnerability attackers can bypass authorization and access resources in the system directly, for example database records or files.
 
-In this case, employees that were removed or were to be listed in the future can be accessed by any user without authorization.
+In this case, employees that were removed or are to be listed in the future can be accessed by any user without authorization.
 
 <img src="http://g.recordit.co/JcCzrfQiOt.gif">
 
