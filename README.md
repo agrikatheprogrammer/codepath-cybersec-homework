@@ -25,7 +25,9 @@ Description:
 
 Vulnerability #2: SQL Injection (SQLi)
 
-Description: The database can be put to sleep for 5 seconds using a SQL Injection. To do so, all we need to inject is **' OR SLEEP(5)=0--'**
+Description: SQL injection, also known as SQLi, is a common attack vector that uses malicious SQL code for backend database manipulation to access information that was not intended to be displayed. This information may include any number of items, including sensitive company data, user lists or private customer details.
+
+The database can be put to sleep for 5 seconds using a SQL Injection. To do so, all we need to inject is **' OR SLEEP(5)=0--'** into the **id=** section of the url. 
 
 <img src="http://g.recordit.co/Q5u62Bv9QT.gif">
 
