@@ -42,7 +42,9 @@ In this case, XSS can be embedded in the feedback/contact form and triggered whe
 
 Vulnerability #2: Username Enumeration
 
-Description:
+Description: Username enumeration is a common application vulnerability which occurs when an attacker can determine if usernames are valid or not. Most commonly, this issue occurs on login forms, where an error similar to “the username is invalid” is returned.
+
+When an existing username is typed in with a random password, the words, "Log in was unsuccessful", are shown in bold. Otherwise, the characters are in normal font without any bolding. Thus, one can figure out which usernames are valid and which are not.
 
 <img src="http://g.recordit.co/NYvawyKM8Y.gif">
 
