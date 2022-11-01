@@ -64,7 +64,3 @@ Description:
 <img src="blue-vuln1.gif">
 
 
-## Notes
-
-Describe any challenges encountered while doing the work
-
