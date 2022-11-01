@@ -23,6 +23,12 @@ Description:
 
 <img src="blue-vuln1.gif">
 
+Vulnerability #2: __________________
+
+Description:
+
+<img src="blue-vuln1.gif">
+
 
 ## Green
 
@@ -32,6 +38,12 @@ Description:
 
 <img src="green-vuln1.gif">
 
+Vulnerability #2: __________________
+
+Description:
+
+<img src="blue-vuln1.gif">
+
 
 ## Red
 
@@ -40,6 +52,12 @@ Vulnerability #1: __________________
 Description:
 
 <img src="red-vuln1.gif">
+
+Vulnerability #2: _________________
+
+Description:
+
+<img src="blue-vuln1.gif">
 
 
 ## Notes
