@@ -32,11 +32,13 @@ Description:
 
 ## Green
 
-Vulnerability #1: __________________
+Vulnerability #1: Cross-Site Scripting (XSS)
 
-Description:
+Description: Cross site scripting (XSS) is an attack in which an attacker injects malicious executable scripts into the code of a trusted application or website. Attackers often initiate an XSS attack by sending a malicious link to a user and enticing the user to click it. 
 
-<img src="green-vuln1.gif">
+In this case, XSS can be embedded in the feedback/contact form and triggered when admin/user opens the feedback. This is a form of stored XSS.
+
+<img src="http://g.recordit.co/JDWtU0qIJR.gif">
 
 Vulnerability #2: __________________
 
