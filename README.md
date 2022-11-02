@@ -68,11 +68,11 @@ Vulnerability #2: Cross-Site Request Forgery (CSRF)
 Description: A clever attacker could design a form which would automatically submit form data to the staff area and take advantage of a logged in user's access permissions.
 
 > Steps to reproduce:
-* Open "Red" Globitek site
-* Login and click on "Staff Menu" -> "Users" and "Edit" a user
-* Inspect the page element and change the value of csrf_token to something arbitrary
-* Change an aspect of the user account, for example the Name
-* Click "Update" and notice that the user account was changed in spite of the incorrect CSRF token
+> Open "Red" Globitek site
+> Login and click on "Staff Menu" -> "Users" and "Edit" a user
+> Inspect the page element and change the value of csrf_token to something arbitrary
+> Change an aspect of the user account, for example the Name
+> Click "Update" and notice that the user account was changed in spite of the incorrect CSRF token
 
 The other sites validated the CSRF token and prevented tampering with the incorrect token.
 
