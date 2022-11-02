@@ -65,9 +65,7 @@ In this case, employees that were removed or are to be listed in the future can 
 
 Vulnerability #2: Cross-Site Request Forgery (CSRF)
 
-Description: A clever attacker could design a form which would automatically submit form data to the staff area and take advantage of a logged in user's access permissions.
-
-> Steps to reproduce:
+Steps to reproduce:
 1. Open "Red" Globitek site
 2. Login and click on "Staff Menu" -> "Users" and "Edit" a user
 3 Inspect the page element and change the value of csrf_token to something arbitrary
