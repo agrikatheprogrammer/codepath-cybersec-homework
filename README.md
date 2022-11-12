@@ -8,6 +8,8 @@
 
 **Summary:** How did you deploy it? Did you use GCP, AWS, Azure, Vagrant, VirtualBox, etc.?
 
+I used GCP.
+
 <img src="mhn-admin.gif">
 
 ### Dionaea Honeypot Deployment (Required)
