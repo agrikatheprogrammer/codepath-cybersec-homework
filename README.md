@@ -13,6 +13,7 @@
 ### Dionaea Honeypot Deployment (Required)
 
 **Summary:** Briefly in your own words, what does dionaea do?
+A honeypot designed to capture malware. The intention is to trap malware exploiting vulnerabilities exposed by services offered to a network.
 
 <img src="dionaea-honeypot.gif">
 
