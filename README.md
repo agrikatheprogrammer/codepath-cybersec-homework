@@ -97,9 +97,11 @@ Dionea $ gcloud compute instances create "honeypot-2" --machine-type "f1-micro" 
 
 **Summary:** Briefly in your own words, what does dionaea do?
 
-A honeypot designed to capture malware. The intention is to trap malware exploiting vulnerabilities exposed by services offered to a network.
+A honeypot designed to capture malware. The intention is to trap malware exploiting vulnerabilities exposed by services offered to a network. Dionaea aims to trap malware exploiting vulnerabilities exposed by services offered over a network, and ultimately obtain a copy of the malware.
 
-<img src="dionaea-honeypot.gif">
+<img src="http://g.recordit.co/vrwEcS14Ex.gif"
+        
+<img src="http://g.recordit.co/h2smVr5wp6.gif">
 
 ### Database Backup (Required) 
 
