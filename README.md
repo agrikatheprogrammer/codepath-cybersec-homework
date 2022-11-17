@@ -55,18 +55,6 @@ Milestone 2: Install the MHN Admin Application
 
 After having established SSH access the MHN Admin VM, the following instructions can be run on the remote VM to install the application. Note: this step may take 30-40 minutes overall. These instructions were adapted from the MHN README.
 
-First, update apt and install git:
-
-$ sudo apt-get update $ sudo apt-get install git -y
-
-Next, clone the MHN code into /opt, change into the clone directory, and run install.sh:
-
-Note: the instructions below reference a fork version of the main MHN repo containing a patch for a known issue identified with the main code as of 10/28/17.
-
-$ cd /opt $ sudo git clone https://github.com/RedolentSun/mhn.git $ cd mhn $ sudo ./install.sh
-
-This will start the script running and it will take a while (approximately 20 minutes) to complete the first part, after which you'll be prompted to specify a series of values:
-
 Do you wish to run in Debug mode? y/n : n Superuser email: You can use any email -- this will be your username to login to the admin console. Superuser password: Choose any password -- you'll be asked to confirm. You can accept the default values for the rest of the values, either by hitting enter or n for any y/n prompts:
 
 Server base url ["http://#.#.#.#"]: Honeymap url ["http://#.#.#.#:3000"]: Mail server address ["localhost"]: Mail server port [25]: Use TLS for email?: y/n n Use SSL for email?: y/n n Mail server username [""]: Mail server password [""]: Mail default sender [""]: Path for log file ["/var/log/mhn/mhn.log"]: The script will churn for another 15 minutes or so, and near the end, there will be two more y/n prompts, both of which you can answer n:
