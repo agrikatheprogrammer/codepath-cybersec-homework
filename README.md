@@ -74,11 +74,23 @@ Create the VM and establish an SSH connection to it before proceeding to the nex
 
 ### Dionaea Honeypot Deployment (Required)
 
-Now, create the VM for our honeypot, called honeypot-2. After SSH-ing into the honeypot-2, using wget "http://35.238.32.74/api/script/?text=true&script_id=2" -O deploy.sh && sudo bash deploy.sh http://35.238.32.74 chnQqKRy, deploy the dionaea!
+Now, create the VM for our honeypot, called honeypot-2. 
+
+gcloud compute instances create "honeypot-2 \
+    --machine-type "n1-standard-1" \
+    --subnet "default" \
+    --maintenance-policy "MIGRATE" \
+    --tags "honeypot" \
+    --image-family "ubuntu-minimal-1804-lts" \
+    --image-project "ubuntu-os-cloud" \
+    --boot-disk-size "10" \
+    --boot-disk-type "pd-standard" \
+    --boot-disk-device-name "honeypot-2
+
+After SSH-ing into the honeypot-2, using wget "http://35.238.32.74/api/script/?text=true&script_id=2" -O deploy.sh && sudo bash deploy.sh http://35.238.32.74 chnQqKRy, deploy the dionaea!
 
 <img src="http://g.recordit.co/PG4AvhXQpS.gif">
 
-Dionea $ gcloud compute instances create "honeypot-2" --machine-type "f1-micro" --subnet "default" --maintenance-policy "MIGRATE" --scopes "https://www.googleapis.com/auth/devstorage.read_only","https://www.googleapis.com/auth/logging.write","https://www.googleapis.com/auth/monitoring.write","https://www.googleapis.com/auth/servicecontrol","https://www.googleapis.com/auth/service.management.readonly","https://www.googleapis.com/auth/trace.append" --tags "mhn-honeypot","http-server" --image "ubuntu-1404-trusty-v20171010" --image-project "ubuntu-os-cloud" --boot-disk-size "10" --boot-disk-type "pd-standard" --boot-disk-device-name "honeypot-2"
 
 **Summary:** Briefly in your own words, what does dionaea do?
 
