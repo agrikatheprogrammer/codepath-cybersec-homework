@@ -86,7 +86,8 @@ sigintz:~ sigintz$ gcloud beta compute firewall-rules create mhn-allow-honeypot 
 
 NAME NETWORK DIRECTION PRIORITY ALLOW DENY mhn-allow-honeypot default INGRESS 1000 all
 
-
+<img src="http://g.recordit.co/zvzKxW1EqA.gif">
+          
 <img src="http://g.recordit.co/FrIu2OFLXI.gif">
 
 ### Dionaea Honeypot Deployment (Required)
