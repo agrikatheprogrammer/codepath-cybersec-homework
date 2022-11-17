@@ -32,8 +32,17 @@ This will prompt you to install the beta SDK; after doing so, the command should
 
 Next, create the VM itself, which we'll call mhn-admin:
 
-$ gcloud compute instances create "mhn-admin" --machine-type "f1-micro" --subnet "default" --maintenance-policy "MIGRATE" --scopes "https://www.googleapis.com/auth/devstorage.read_only","https://www.googleapis.com/auth/logging.write","https://www.googleapis.com/auth/monitoring.write","https://www.googleapis.com/auth/servicecontrol","https://www.googleapis.com/auth/service.management.readonly","https://www.googleapis.com/auth/trace.append" --tags "mhn-admin","http-server","https-server" --image "ubuntu-1404-trusty-v20171010" --image-project "ubuntu-os-cloud" --boot-disk-size "10" --boot-disk-type "pd-standard" --boot-disk-device-name "mhn-admin"
-
+gcloud compute instances create "mhn-admin" \
+    --machine-type "n1-standard-1" \
+    --subnet "default" \
+    --maintenance-policy "MIGRATE" \
+    --tags "mhn-admin" \
+    --image-family "ubuntu-minimal-1804-lts" \
+    --image-project "ubuntu-os-cloud" \
+    --boot-disk-size "10" \
+    --boot-disk-type "pd-standard" \
+    --boot-disk-device-name "mhn-admin"
+    
 Note the tags value, which controls the applicable firewall rules. The output should show both internal and external IP addresses...make note of the external IP:
 
 NAME ZONE MACHINE_TYPE PREEMPTIBLE INTERNAL_IP EXTERNAL_IP STATUS mhn-admin us-west1-c f1-micro 10.138.0.2 35.197.22.12 RUNNING
@@ -76,18 +85,9 @@ This VM will require different ports open, though which ones depend on the speci
 
 Create the VM and establish an SSH connection to it before proceeding to the next step.
 
-GCP Users Run the following commands on your local machine. You can either exit out of the mhn-admin shell or just open a new terminal window.
-
-First, create the firewall rule to allow incoming traffic on all ports:
-
-$ gcloud beta compute firewall-rules create mhn-allow-honeypot --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=all --source-ranges=0.0.0.0/0 --target-tags=mhn-honeypot
-
-gcloud beta compute firewall-rules create mhn-allow-honeypot --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=all --source-ranges=0.0.0.0/0 --target-tags=mhn-honeypot Creating firewall...|Created [https://www.googleapis.com/compute/beta/projects/fb-cp-wk9/global/firewalls/mhn-allow-honeypot]. Creating firewall...done.
-
-NAME NETWORK DIRECTION PRIORITY ALLOW DENY mhn-allow-honeypot default INGRESS 1000 all
-
 <img src="http://g.recordit.co/zvzKxW1EqA.gif">
           
+<img src="http://g.recordit.co/FrIu2OFLXI.gif">
 
 ### Dionaea Honeypot Deployment (Required)
 
@@ -108,6 +108,8 @@ A honeypot designed to capture malware. The intention is to trap malware exploit
 ### Database Backup (Required) 
 
 **Summary:** What is the RDBMS that MHN-Admin uses? What information does the exported JSON file record?
+
+
 
 *Be sure to upload session.json directly to this GitHub repo/branch in order to get full credit.*
 
