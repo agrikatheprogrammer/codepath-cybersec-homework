@@ -77,6 +77,8 @@ Server base url ["http://#.#.#.#"]: Honeymap url ["http://#.#.#.#:3000"]: Mail s
 
 Would you like to integrate with Splunk? (y/n) n Would you like to install ELK? (y/n) n Now you should be able to load the external IP in a browser and login to the admin console via the "superuser" values you chose above. Have a look around the UI to get oriented; there won't be any data available as we've not deployed any honeypots yet.
 
+<img src="http://g.recordit.co/8HfAYrHv1r.gif">
+
 Milestone 3: Create a MHN Honeypot VM MHN supports multiple honeypots, each of which has a slightly different purpose you can read about. To start, we'll deploy Dionaea over HTTP, a honeypot used to trap malware samples.
 
 First, create a VM for your first honeypot via your cloud provider. As before, this VM also needs to have an internet-facing IP and accessible to you via ssh (or a similar protocol), and as before, you can use a small or micro-sized VM, but it should be running Ubuntu 14.04 (trusty).
@@ -84,8 +86,6 @@ First, create a VM for your first honeypot via your cloud provider. As before, t
 This VM will require different ports open, though which ones depend on the specific honeypot being used. To keep things simple, for this VM (and any additional honeypot VMs you create), simply allow incoming traffic from all ports and protocols. Again, this will likely require a firewall rule.
 
 Create the VM and establish an SSH connection to it before proceeding to the next step.
-
-<img src="http://g.recordit.co/8HfAYrHv1r.gif">
           
 <img src="http://g.recordit.co/FrIu2OFLXI.gif">
 
