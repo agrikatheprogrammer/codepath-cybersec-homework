@@ -91,7 +91,9 @@ NAME NETWORK DIRECTION PRIORITY ALLOW DENY mhn-allow-honeypot default INGRESS 10
 
 ### Dionaea Honeypot Deployment (Required)
 
-Now, create the VM for our honeypot, called honeypot-2:
+Now, create the VM for our honeypot, called honeypot-2 using wget "http://35.238.32.74/api/script/?text=true&script_id=2" -O deploy.sh && sudo bash deploy.sh http://35.238.32.74 chnQqKRy
+
+<img src="http://g.recordit.co/PG4AvhXQpS.gif">
 
 Dionea $ gcloud compute instances create "honeypot-2" --machine-type "f1-micro" --subnet "default" --maintenance-policy "MIGRATE" --scopes "https://www.googleapis.com/auth/devstorage.read_only","https://www.googleapis.com/auth/logging.write","https://www.googleapis.com/auth/monitoring.write","https://www.googleapis.com/auth/servicecontrol","https://www.googleapis.com/auth/service.management.readonly","https://www.googleapis.com/auth/trace.append" --tags "mhn-honeypot","http-server" --image "ubuntu-1404-trusty-v20171010" --image-project "ubuntu-os-cloud" --boot-disk-size "10" --boot-disk-type "pd-standard" --boot-disk-device-name "honeypot-2"
 
@@ -99,7 +101,7 @@ Dionea $ gcloud compute instances create "honeypot-2" --machine-type "f1-micro" 
 
 A honeypot designed to capture malware. The intention is to trap malware exploiting vulnerabilities exposed by services offered to a network. Dionaea aims to trap malware exploiting vulnerabilities exposed by services offered over a network, and ultimately obtain a copy of the malware.
 
-<img src="http://g.recordit.co/vrwEcS14Ex.gif"
+<img src="http://g.recordit.co/vrwEcS14Ex.gif">
         
 <img src="http://g.recordit.co/h2smVr5wp6.gif">
 
