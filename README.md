@@ -74,7 +74,7 @@ Create the VM and establish an SSH connection to it before proceeding to the nex
 
 ### Dionaea Honeypot Deployment (Required)
 
-Now, create the VM for our honeypot, called honeypot-2. After SSH-ing into the honeypot-2, using wget "http://35.238.32.74/api/script/?text=true&script_id=2" -O deploy.sh && sudo bash deploy.sh http://35.238.32.74 chnQqKRy, deploy the diaonaea!
+Now, create the VM for our honeypot, called honeypot-2. After SSH-ing into the honeypot-2, using wget "http://35.238.32.74/api/script/?text=true&script_id=2" -O deploy.sh && sudo bash deploy.sh http://35.238.32.74 chnQqKRy, deploy the dionaea!
 
 <img src="http://g.recordit.co/PG4AvhXQpS.gif">
 
