@@ -70,7 +70,7 @@ This VM will require different ports open, though which ones depend on the speci
 
 Create the VM and establish an SSH connection to it before proceeding to the next step.
           
-<img src="http://g.recordit.co/wMQ6AIfwYD.gif">
+<img src="http://g.recordit.co/bt4NK2tu13.gif">
 
 ### Dionaea Honeypot Deployment (Required)
 
