@@ -88,6 +88,7 @@ NAME NETWORK DIRECTION PRIORITY ALLOW DENY mhn-allow-honeypot default INGRESS 10
 
 <img src="http://g.recordit.co/zvzKxW1EqA.gif">
           
+          
 <img src="http://g.recordit.co/FrIu2OFLXI.gif">
 
 ### Dionaea Honeypot Deployment (Required)
