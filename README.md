@@ -43,11 +43,7 @@ gcloud compute instances create "mhn-admin" \
     --boot-disk-type "pd-standard" \
     --boot-disk-device-name "mhn-admin"
     
-Note the tags value, which controls the applicable firewall rules. The output should show both internal and external IP addresses...make note of the external IP:
-
-NAME ZONE MACHINE_TYPE PREEMPTIBLE INTERNAL_IP EXTERNAL_IP STATUS mhn-admin us-west1-c f1-micro 10.138.0.2 35.197.22.12 RUNNING
-
-EXTERNAL IP: 35.197.22.12
+Note the tags value, which controls the applicable firewall rules. The output should show both internal and external IP addresses...make note of the external IP.
 
 Finally, establish SSH access to the VM via gcloud compute ssh mhn-admin (which is similar to ssh). You'll be asked to add the fingerprint the first time you connect, and you'll see the Ubuntu welcome message and a command prompt.
 
@@ -77,7 +73,7 @@ Server base url ["http://#.#.#.#"]: Honeymap url ["http://#.#.#.#:3000"]: Mail s
 
 Would you like to integrate with Splunk? (y/n) n Would you like to install ELK? (y/n) n Now you should be able to load the external IP in a browser and login to the admin console via the "superuser" values you chose above. Have a look around the UI to get oriented; there won't be any data available as we've not deployed any honeypots yet.
 
-<img src="http://g.recordit.co/qioEi7qiUK.gif">
+<img src="http://g.recordit.co/wMQ6AIfwYD.gif">
 
 Milestone 3: Create a MHN Honeypot VM MHN supports multiple honeypots, each of which has a slightly different purpose you can read about. To start, we'll deploy Dionaea over HTTP, a honeypot used to trap malware samples.
 
