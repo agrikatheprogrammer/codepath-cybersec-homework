@@ -94,7 +94,7 @@ A honeypot designed to capture malware. The intention is to trap malware exploit
 
 The RDBMS that MHN-Admin uses is
 
-The exported JSON has the details of the attacks - the date, the protocol, the source ip, source port, destination port, and the honeypot I deployed/was attacked.
+The exported JSON file has the details of the attacks - the date, the protocol, the source ip, source port, destination port, and the honeypot I deployed/was attacked.
 
 *Be sure to upload session.json directly to this GitHub repo/branch in order to get full credit.*
 
