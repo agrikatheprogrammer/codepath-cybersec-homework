@@ -82,7 +82,7 @@ First, create the firewall rule to allow incoming traffic on all ports:
 
 $ gcloud beta compute firewall-rules create mhn-allow-honeypot --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=all --source-ranges=0.0.0.0/0 --target-tags=mhn-honeypot
 
-sigintz:~ sigintz$ gcloud beta compute firewall-rules create mhn-allow-honeypot --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=all --source-ranges=0.0.0.0/0 --target-tags=mhn-honeypot Creating firewall...|Created [https://www.googleapis.com/compute/beta/projects/fb-cp-wk9/global/firewalls/mhn-allow-honeypot]. Creating firewall...done.
+gcloud beta compute firewall-rules create mhn-allow-honeypot --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=all --source-ranges=0.0.0.0/0 --target-tags=mhn-honeypot Creating firewall...|Created [https://www.googleapis.com/compute/beta/projects/fb-cp-wk9/global/firewalls/mhn-allow-honeypot]. Creating firewall...done.
 
 NAME NETWORK DIRECTION PRIORITY ALLOW DENY mhn-allow-honeypot default INGRESS 1000 all
 
