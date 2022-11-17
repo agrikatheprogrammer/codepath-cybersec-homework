@@ -104,7 +104,7 @@ A honeypot designed to capture malware. The intention is to trap malware exploit
 
 **Summary:** What is the RDBMS that MHN-Admin uses? What information does the exported JSON file record?
 
-The RDBMS that MHN-Admin uses is
+The RDBMS that MHN-Admin uses is MongoDB.
 
 The exported JSON file has the details of the attacks - the date, the protocol, the source ip, source port, destination port, and the honeypot I deployed/was attacked.
 
