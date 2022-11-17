@@ -85,7 +85,7 @@ This VM will require different ports open, though which ones depend on the speci
 
 Create the VM and establish an SSH connection to it before proceeding to the next step.
 
-<img src="http://g.recordit.co/zvzKxW1EqA.gif">
+<img src="http://g.recordit.co/8HfAYrHv1r.gif">
           
 <img src="http://g.recordit.co/FrIu2OFLXI.gif">
 
